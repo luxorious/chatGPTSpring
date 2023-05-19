@@ -12,7 +12,9 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 //реалізує методи для додавання, отримання списку та отримання користувача за ідентифікатором.
     User getUserById(Integer id);
 
-    List<User> deleteByLoginAndPassword(String login, List<Integer> password);
+    User deleteByLogin(String login);
+
+    User getUsersByLogin(String login);
 
     List<User> getUsersByFullName(String name);
 

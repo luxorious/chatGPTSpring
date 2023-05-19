@@ -3,12 +3,14 @@ package com.example.chatgptspring.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.List;
 
 @Getter
 @NoArgsConstructor
 @Entity
+@ToString
 @Table(name = "users")
 public class User {
     @Id
@@ -57,4 +59,5 @@ public class User {
     public void seteMail(String eMail) {
         this.eMail = eMail;
     }
+
 }

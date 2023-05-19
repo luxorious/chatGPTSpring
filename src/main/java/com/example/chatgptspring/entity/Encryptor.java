@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.IntStream;
 
+@Component
 public class Encryptor {
 
     private String[] symbols;
